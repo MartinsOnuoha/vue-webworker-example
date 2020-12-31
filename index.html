@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue-Webworker</title>
+  <link rel="stylesheet" href="./styles/app.css">
+</head>
+<body>
+  <div id="app">
+    <div class="dog-image">
+      <img :src="dogImage" v-if="dogImage" />
+    </div>
+
+    <p v-if="counter">{{ counter }}</p>
+  </div>
+
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="./script/app.js"></script>
+</body>
+</html>
